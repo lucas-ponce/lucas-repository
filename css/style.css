@@ -15,11 +15,13 @@ header {
   align-items: center;
   margin-bottom: 50px;
 }
-header div, header nav {
+header div {
   display: flex;
   flex-wrap: wrap;
 }
 header nav {
+  display: flex;
+  flex-wrap: wrap;
   width: 50%;
 }
 header .navBar {
@@ -124,11 +126,13 @@ body {
 #ind-back .gallery {
   display: grid;
   grid-template-areas: "img1 img1 p1" "img1 img1 img4" "p2 img2 img2" "img5 img2 img2" "img3 img3 p3" "img3 img3 img6";
-  gap: 5px;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  gap: 2px;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 3px;
   align-items: center;
-  align-content: space-around;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 #ind-back .gallery p {
   text-align: center;
@@ -197,16 +201,20 @@ body {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-items: center;
   }
-  header div, header nav {
+  header div {
     align-self: flex-end;
   }
-  header nav ul {
+  header nav {
+    justify-content: center;
+  }
+  header nav .navBar {
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    justify-items: center;
   }
 }
 @media (min-width: 576px) and (max-width: 992px) {

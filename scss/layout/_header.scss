@@ -10,7 +10,8 @@ header {
 		flex-wrap: wrap;
 	}
 	nav {
-		@extend div;
+		display: flex;
+		flex-wrap:wrap ;
 		width: 50%;
 	}
 	.navBar {
