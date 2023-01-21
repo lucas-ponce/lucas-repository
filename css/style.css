@@ -204,6 +204,7 @@ body {
   }
   header div {
     align-self: flex-end;
+    margin-left: 78px;
   }
   header nav {
     justify-content: center;
