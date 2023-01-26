@@ -129,7 +129,7 @@ body {
   grid-template-areas: "img1 img1 p1" "img1 img1 img4" "p2 img2 img2" "img5 img2 img2" "img3 img3 p3" "img3 img3 img6";
   gap: 2px;
   grid-template-rows: auto auto auto auto auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
   margin: 3px;
   align-items: center;
   margin-top: 0;
@@ -138,6 +138,9 @@ body {
 #ind-back .gallery p {
   text-align: center;
   display: flex;
+}
+#ind-back .gallery img {
+  object-fit: cover;
 }
 
 #img1 {
